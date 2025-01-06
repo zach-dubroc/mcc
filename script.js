@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const ctx = document.getElementById("mariahChart").getContext("2d");
-
+  //paste from obsidian for now, will build out an api for next years attack
   const data = {
     "12/3": ["5:56pm", "6:48pm"],
     "12/10": ["8:42pm"],
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const tooltipData = Object.values(data);
 
   new Chart(ctx, {
-    type: "bubble",
+    type: "bar",
     data: {
       labels: labels,
       datasets: [
